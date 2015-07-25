@@ -63,6 +63,13 @@ class GameController < ApplicationController
     @papertie=Move.where({:user_move => "paper",:user_wins  => "0", :computer_wins => "0"}).count
     @scissorstie=Move.where({:user_move => "scissors",:user_wins => "0", :computer_wins => "0"}).count
 
+    @totalwin=Move.where({:user_wins => "1", }).count
+    @totallose=Move.where({:computer_wins => "1"}).count
+    @totaltie=Move.where({:tie => "1",}).count
+
+    @total = @totalwin + @totallose + @totaltie
+
+
 
 
    render "rps.html.erb"
