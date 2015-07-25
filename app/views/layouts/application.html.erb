@@ -5,10 +5,40 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+
+ <link rel="stylesheet" media="all" href="/assets/application-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" />
+  <script src="/assets/application-2221ca6f8b917b8bf6e628442a9b0246011ae72f97df6edcf6e48956ad29e9b0.js"></script>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Qr3mAwrUlYHyB1iQUtjT2N6snsXHmE5ViNPlbiYWrQ7eYRUEoV5TL4RTGnkWPLNUK2lULq+Z2kBfwFgyjSV8YA==" />
+
+  <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
+
+
 </head>
 <body>
 
-<%= yield %>
+<div class="container">
+  <hr>
+
+  <div class="row">
+
+
+    <div class="col-md-4">
+      <a href="/play/rock" class="btn btn-warning btn-block btn-lg">Play rock.</a>
+    </div>
+
+    <div class="col-md-4">
+      <a href="/play/paper" class="btn btn-warning btn-block btn-lg">Play paper.</a>
+    </div>
+
+    <div class="col-md-4">
+      <a href="/play/scissors" class="btn btn-warning btn-block btn-lg">Play scissors.</a>
+    </div>
+  </div>
+
+<%= yield%>
+
+
 
 </body>
 </html>
