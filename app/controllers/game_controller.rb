@@ -9,7 +9,7 @@ class GameController < ApplicationController
   def rps
 
 
-    @user_move= @user_move = params["the_move"]
+    @user_move=params["the_move"]
     @computer_move= ["rock", "paper", "scissors"].sample
 
 
